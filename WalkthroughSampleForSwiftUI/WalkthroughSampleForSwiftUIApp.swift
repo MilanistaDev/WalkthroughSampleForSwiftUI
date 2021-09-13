@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct WalkthroughSampleForSwiftUIApp: App {
+
+    @AppStorage(wrappedValue: false, UserDefaultsKey.isShownWalkthrough) private var isShowedWalkthrough
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // Show Walkthrough or Go to main contents
+            if !isShowedWalkthrough {
+                WalkthroughContentView()
+            } else {
+                ContentView()
+            }
         }
     }
 }

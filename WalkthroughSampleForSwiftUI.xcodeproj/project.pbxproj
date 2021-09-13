@@ -12,6 +12,7 @@
 		FD3E02A626EF72CC00901B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E02A526EF72CC00901B07 /* Assets.xcassets */; };
 		FD3E02A926EF72CC00901B07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E02A826EF72CC00901B07 /* Preview Assets.xcassets */; };
 		FD3E02B326EF73FB00901B07 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E02B226EF73FB00901B07 /* UserDefaultsKey.swift */; };
+		FD3E02B526EF763A00901B07 /* WalkthroughContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E02B426EF763A00901B07 /* WalkthroughContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD3E02A826EF72CC00901B07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD3E02AA26EF72CC00901B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3E02B226EF73FB00901B07 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		FD3E02B426EF763A00901B07 /* WalkthroughContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,8 @@
 		FD3E02B026EF73C500901B07 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FD3E02A326EF72CA00901B07 /* ContentView.swift */,
+				FD3E02B626EF764A00901B07 /* Walkthrough */,
+				FD3E02B726EF765F00901B07 /* TopContents */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -86,6 +89,22 @@
 				FD3E02B226EF73FB00901B07 /* UserDefaultsKey.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		FD3E02B626EF764A00901B07 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				FD3E02B426EF763A00901B07 /* WalkthroughContentView.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		FD3E02B726EF765F00901B07 /* TopContents */ = {
+			isa = PBXGroup;
+			children = (
+				FD3E02A326EF72CA00901B07 /* ContentView.swift */,
+			);
+			path = TopContents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD3E02B326EF73FB00901B07 /* UserDefaultsKey.swift in Sources */,
+				FD3E02B526EF763A00901B07 /* WalkthroughContentView.swift in Sources */,
 				FD3E02A426EF72CA00901B07 /* ContentView.swift in Sources */,
 				FD3E02A226EF72CA00901B07 /* WalkthroughSampleForSwiftUIApp.swift in Sources */,
 			);
