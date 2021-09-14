@@ -9,7 +9,24 @@ import SwiftUI
 
 struct WalkthroughContentView: View {
     var body: some View {
-        Text("Walkthrough Screen")
+        GeometryReader { geometry in
+            ZStack {
+                Text("Walkthrough Screen")
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Button(action: {}, label: {
+                            Text("Next")
+                        })
+                    }
+                    .frame(height: 44.0)
+                    .padding(.trailing, 32.0)
+                    .padding(.bottom, geometry.safeAreaInsets.bottom + 16.0)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 
