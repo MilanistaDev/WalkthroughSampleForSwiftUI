@@ -28,6 +28,7 @@ struct WalkthroughView: View {
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .animation(.linear(duration: 0.3))
                 FloatingButtonView(selection: $selection)
                     .padding(.trailing, 28.0)
                     .padding(.bottom, geometry.safeAreaInsets.bottom + 16.0)
