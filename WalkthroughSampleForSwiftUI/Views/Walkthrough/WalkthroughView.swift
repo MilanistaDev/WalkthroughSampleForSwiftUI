@@ -9,6 +9,8 @@ import SwiftUI
 
 struct WalkthroughView: View {
 
+    @State private var selection: Int = 0
+
     // Gloomy
     init() {
         UIPageControl.appearance().currentPageIndicatorTintColor = .label
@@ -18,13 +20,15 @@ struct WalkthroughView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                TabView {
-                    ForEach(WalkthroughType.allCases, id: \.self) { type in
-                        WalkthroughContentView(type: type, width: geometry.size.width)
+                TabView(selection: $selection) {
+                    ForEach(WalkthroughType.allCases.indices, id: \.self) { index in
+                        WalkthroughContentView(type: WalkthroughType(rawValue: index)!,
+                                               width: geometry.size.width)
+                            .tag(index)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-                FloatingButtonView()
+                FloatingButtonView(selection: $selection)
                     .padding(.trailing, 28.0)
                     .padding(.bottom, geometry.safeAreaInsets.bottom + 16.0)
             }

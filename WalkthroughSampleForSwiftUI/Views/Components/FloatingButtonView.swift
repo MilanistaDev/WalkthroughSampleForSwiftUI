@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct FloatingButtonView: View {
+
+    @Binding var selection: Int
+
     var body: some View {
         VStack {
             Spacer()
             HStack {
                 Spacer()
-                Button(action: {}, label: {
+                Button(action: {
+                    buttonDidTap()
+                }, label: {
                     HStack(spacing: 6.0) {
-                        Text("Next")
+                        Text(selection == WalkthroughType.allCases.count - 1 ? "Start": "Next")
                             .font(.custom("Futura-Medium", size: 20.0, relativeTo: .title3))
                             .foregroundColor(.primary)
                         Image(systemName: "arrowtriangle.forward.fill")
@@ -28,10 +33,18 @@ struct FloatingButtonView: View {
             }
         }
     }
+
+    private func buttonDidTap() {
+        if selection == WalkthroughType.allCases.count - 1 {
+            return
+        } else {
+            selection += 1
+        }
+    }
 }
 
 struct FloatingButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        FloatingButtonView()
+        FloatingButtonView(selection: .constant(0))
     }
 }
