@@ -20,7 +20,7 @@ struct WalkthroughView: View {
             ZStack {
                 TabView {
                     ForEach(WalkthroughType.allCases, id: \.self) { type in
-                        WalkthroughContentView(type: type)
+                        WalkthroughContentView(type: type, width: geometry.size.width)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
