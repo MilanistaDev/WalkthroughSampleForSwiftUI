@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FloatingButtonView: View {
 
+    @AppStorage(wrappedValue: false, UserDefaultsKey.isShownWalkthrough) private var isShowedWalkthrough
     @Binding var selection: Int
 
     var body: some View {
@@ -36,7 +37,7 @@ struct FloatingButtonView: View {
 
     private func buttonDidTap() {
         if selection == WalkthroughType.allCases.count - 1 {
-            return
+            isShowedWalkthrough = true
         } else {
             selection += 1
         }
