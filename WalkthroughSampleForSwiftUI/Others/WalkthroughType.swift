@@ -33,7 +33,7 @@ enum WalkthroughType: Int, CaseIterable {
         case .paging:
             return "Paging function"
         case .appStorage:
-            return "App Storage"
+            return "AppStorage"
         case .mainContent:
             return "Main Content"
         }
