@@ -14,6 +14,7 @@
 		FD3E02B326EF73FB00901B07 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E02B226EF73FB00901B07 /* UserDefaultsKey.swift */; };
 		FD3E02B526EF763A00901B07 /* WalkthroughContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E02B426EF763A00901B07 /* WalkthroughContentView.swift */; };
 		FD9D83B726F0EF5500DE3273 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B626F0EF5500DE3273 /* FloatingButtonView.swift */; };
+		FD9D83B926F1488A00DE3273 /* WalkthroughType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D83B826F1488A00DE3273 /* WalkthroughType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FD3E02B226EF73FB00901B07 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		FD3E02B426EF763A00901B07 /* WalkthroughContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentView.swift; sourceTree = "<group>"; };
 		FD9D83B626F0EF5500DE3273 /* FloatingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
+		FD9D83B826F1488A00DE3273 /* WalkthroughType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FD3E02B226EF73FB00901B07 /* UserDefaultsKey.swift */,
+				FD9D83B826F1488A00DE3273 /* WalkthroughType.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				FD3E02B526EF763A00901B07 /* WalkthroughContentView.swift in Sources */,
 				FD3E02A426EF72CA00901B07 /* ContentView.swift in Sources */,
 				FD9D83B726F0EF5500DE3273 /* FloatingButtonView.swift in Sources */,
+				FD9D83B926F1488A00DE3273 /* WalkthroughType.swift in Sources */,
 				FD3E02A226EF72CA00901B07 /* WalkthroughSampleForSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
