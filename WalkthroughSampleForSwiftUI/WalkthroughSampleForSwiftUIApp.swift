@@ -16,7 +16,7 @@ struct WalkthroughSampleForSwiftUIApp: App {
         WindowGroup {
             // Show Walkthrough or Go to main contents
             if !isShowedWalkthrough {
-                WalkthroughContentView()
+                WalkthroughView()
             } else {
                 ContentView()
             }
