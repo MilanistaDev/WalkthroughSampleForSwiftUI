@@ -12,14 +12,30 @@ struct ContentView: View {
     @AppStorage(wrappedValue: false, UserDefaultsKey.isShownWalkthrough) private var isShowedWalkthrough
 
     var body: some View {
-        VStack {
-            Text("Main Contents")
-                .padding()
-            Button(action: {
-                buttonDidTap()
-            }, label: {
-                Text("Reset Walkthrough Flag")
-            })
+        ZStack {
+            VStack {
+                Text("Main Contents")
+                    .padding()
+                Button(action: {
+                    buttonDidTap()
+                }, label: {
+                    Text("Reset Walkthrough Flag")
+                })
+            }
+            VStack {
+                Spacer()
+                Text("Great images of the walkthrough are from unDraw.\nI love this service.😍\n")
+                    .font(.custom("Futura-Medium",
+                                  size: 13.0,
+                                  relativeTo: .footnote))
+                Link(destination: URL(string: "https://undraw.co/illustrations")!) {
+                    Text("https://undraw.co/illustrations")
+                        .font(.footnote)
+                        .underline()
+                }
+            }
+            .padding(.bottom, 32.0)
+            .padding(.horizontal, 20.0)
         }
     }
 
