@@ -36,6 +36,8 @@ struct FloatingButtonView: View {
     }
 
     private func buttonDidTap() {
+        // Better to write on ViewModel etc.
+        // Update App Storage by tapping the Start button
         if selection == WalkthroughType.allCases.count - 1 {
             isShowedWalkthrough = true
         } else {

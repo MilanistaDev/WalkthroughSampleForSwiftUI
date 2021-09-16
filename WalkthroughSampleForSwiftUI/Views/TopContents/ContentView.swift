@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @AppStorage(wrappedValue: false, UserDefaultsKey.isShownWalkthrough) private var isShowedWalkthrough
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Main Contents")
+                .padding()
+            Button(action: {
+                buttonDidTap()
+            }, label: {
+                Text("Reset Walkthrough Flag")
+            })
+        }
+    }
+
+    private func buttonDidTap() {
+        // Better to write on ViewModel etc.
+        isShowedWalkthrough = false
     }
 }
 
